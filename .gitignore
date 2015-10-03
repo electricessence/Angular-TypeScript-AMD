@@ -1,0 +1,9 @@
+.idea/dictionaries/*.xml
+.idea/typescript-compiler.xml
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/tasks
+
+node_modules
+bower_components
+typings

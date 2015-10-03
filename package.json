@@ -1,0 +1,14 @@
+{
+  "name": "Angular-TypeScript-AMD",
+  "version": "1.0.0",
+  "description": "This demonstrates how to use AngularJS, TypeScript, and AMD/RequireJS together.",
+  "devDependencies": {
+    "typescript": "^1.6.2",
+    "tsd": "^0.6.4",
+    "typedoc": "^0.3.11",
+    "bower": "^1.5.3"
+  },
+  "scripts":{
+    "postinstall": "node node_modules/bower/bin/bower install && node node_modules/tsd/build/cli reinstall"
+  }
+}
