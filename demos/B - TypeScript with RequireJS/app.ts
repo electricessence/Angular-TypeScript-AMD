@@ -13,10 +13,8 @@ var appModule = angular
 // Defer bootstrapping until document is ready, and sub component is loaded.
 require(['./fieldset/component', 'domready!'], (FieldSet)=>
 {
-
 	FieldSet.activate(appModule);
 	angular.bootstrap(document, [appModule.name]);
-
 });
 
 
