@@ -14,12 +14,19 @@ require.config({
 		}
 	},
 
+
 	// Plug-ins.
 	map: {
 		'*': {
 			'css': '../../bower_components/require-css/css', // or whatever the path to require-css is
-			'text': '../../bower_components/text',
+			'text': '../../bower_components/text/text',
 			'domready':'../../bower_components/requirejs-domready/domReady'
+		}
+	},
+
+	config: {
+		text: {
+
 		}
 	}
 });

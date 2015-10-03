@@ -1,21 +1,15 @@
-///<reference path="../../typings/angularjs/angular.d.ts"/>
+/*
+ * This demonstrates exporting controllers so they can all be imported in one module.
+ * See app.ts.
+ */
+
+/// <reference path="..\..\typings\angularjs\angular.d.ts"/>
+/// <reference path="..\..\source\IScopeWithData.d.ts"/>
+/// <amd-dependency path="css!app.controllers.css"/> // Injects CSS dependency for the controllers.
+import ControllerBase = require('../../source/ControllerBase');
 
 
 var INJECT = ['$scope'];
-
-export interface IScopeWithData extends ng.IScope
-{
-	data:{ [key: string]: any};
-}
-
-class ControllerBase
-{
-	constructor(
-		public $scope:IScopeWithData)
-	{
-		$scope.data = {};
-	}
-}
 
 export class TitleController extends ControllerBase
 {

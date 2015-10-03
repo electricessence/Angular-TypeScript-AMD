@@ -4,15 +4,8 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-define(["require", "exports"], function (require, exports) {
+define(["require", "exports", '../../source/ControllerBase', "css!app.controllers.css"], function (require, exports, ControllerBase) {
     var INJECT = ['$scope'];
-    var ControllerBase = (function () {
-        function ControllerBase($scope) {
-            this.$scope = $scope;
-            $scope.data = {};
-        }
-        return ControllerBase;
-    })();
     var TitleController = (function (_super) {
         __extends(TitleController, _super);
         function TitleController($scope) {
@@ -34,4 +27,4 @@ define(["require", "exports"], function (require, exports) {
     })(ControllerBase);
     exports.BodyController = BodyController;
 });
-//# sourceMappingURL=controllers.js.map
+//# sourceMappingURL=app.controllers.js.map

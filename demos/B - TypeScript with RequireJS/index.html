@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8"/>
     <title>demos/B - TypeScript with RequireJS</title>
-    <style>.ng-cloak {display: none;}</style>
+    <link rel="stylesheet" href="app.css" />
     <script src="../../bower_components/requirejs/require.js"></script>
     <script src="require.config.js"></script>
     <script>require(['app']);</script>
 </head>
 <body>
 
-<div class="main" ng-controller="TitleController">
-    <h3 class="ng-cloak">{{data.title}}</h3>
-</div>
+<header ng-controller="TitleController">
+    <h3><span class="ng-cloak">{{data.title}}</span><span>&nbsp;</span></h3>
+</header>
 
-<div class="other" ng-controller="BodyController">
-    <span class="ng-cloak">{{data.body}}</span>
+<div ng-controller="BodyController">
+    <span class="ng-cloak">{{data.body}}</span><span>&nbsp;</span>
 </div>
 
 </body>
