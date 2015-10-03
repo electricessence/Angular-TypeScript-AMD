@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Source Inspection" pattern="(file:demos//*||file:source//*)&amp;&amp;!file:demos/B - TypeScript with RequireJS//*.js&amp;&amp;!file:demos/B - TypeScript with RequireJS//*.js.map&amp;&amp;!file:demos/B - TypeScript with RequireJS//*.css&amp;&amp;!file:source//*.js&amp;&amp;!file:source//*.map" />
+</component>
