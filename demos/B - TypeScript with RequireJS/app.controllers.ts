@@ -9,11 +9,9 @@
 import ControllerBase = require('../../source/ControllerBase');
 
 
-var INJECT = ['$scope'];
-
 export class TitleController extends ControllerBase
 {
-	static $inject:string[] = INJECT;
+	static $inject:string[] = ControllerBase.$inject;
 
 	constructor($scope:IScopeWithData)
 	{
@@ -26,7 +24,7 @@ export class TitleController extends ControllerBase
 
 export class BodyController extends ControllerBase
 {
-	static $inject:string[] = INJECT;
+	static $inject:string[] = ControllerBase.$inject;
 
 	constructor($scope:IScopeWithData)
 	{

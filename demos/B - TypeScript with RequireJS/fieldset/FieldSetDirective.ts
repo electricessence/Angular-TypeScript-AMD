@@ -3,12 +3,20 @@
 
 import ControllerBase = require('../../../source/ControllerBase');
 
-//var template = require('text!./template.html');
+const TEMPLATE = `
+<fieldset ng-controller="FieldSetController">
+    <legend>{{data.legend}}</legend>
+
+    <div>
+        {{data.body}}
+    </div>
+</fieldset>
+`;
 
 export var fieldSet:ng.IDirectiveFactory = function():ng.IDirective {
 	return  {
 		restrict: "EC",
 		transclude: true,
-		template:null//template
+		template: TEMPLATE
 	};
 };

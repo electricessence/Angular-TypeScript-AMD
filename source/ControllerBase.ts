@@ -3,6 +3,8 @@
 
 class ControllerBase
 {
+	static $inject:string[] = ['$scope'];
+
 	constructor(
 		public $scope:IScopeWithData)
 	{
